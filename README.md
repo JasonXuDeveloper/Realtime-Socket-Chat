@@ -315,7 +315,9 @@ public class Main
     }
 }
 ```
+
 <br>
+
 #### Chatroom.cs
 展示UI以及接收服务器信息的核心代码
 查看Unity-DEMO/Scripts/Chatroom.cs以获得更多详情
@@ -329,7 +331,9 @@ Socket.On("recieveMsg",(e)=>
     //Codes here for showing what we recieved;
 });
 ```
+
 <br>
+
 ## Server cores
 可以在Server目录下History.txt查阅完整全部客户聊天记录
 ```js
