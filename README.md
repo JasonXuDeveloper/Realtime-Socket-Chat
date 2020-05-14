@@ -122,7 +122,9 @@ public class Main
     }
 }
 ```
+
 <br>
+
 #### Chatroom.cs
 This is the main UI Setup & Server listener code.
 See Unity-DEMO/Scripts/Chatroom.cs for details.
@@ -136,7 +138,9 @@ Socket.On("recieveMsg",(e)=>
     //Codes here for showing what we recieved;
 });
 ```
+
 <br>
+
 ## Server cores
 You can check the history.txt file in Server dictionary, which is the chat history overall
 ```js
@@ -190,11 +194,6 @@ please follow [jason_the_developer](https://www.instagram.com/jason_the_programm
 
 # 实时聊天系统
 基于C#客户端以及Node.js服务端的聊天室，支持多人聊天室以及私人聊天
-
-## 接下来会更新什么？
-* 基于C#的客户端源代码（需要在Unity3d运行）
-* 基于Node.js的服务端源代码（可在任何系统虚拟机运行，请先部署Node.js环境）
-* Unity3d示例项目
 
 ## 部署
 ### 服务端
