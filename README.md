@@ -76,7 +76,8 @@ Note: Client setup fits all operating systems which can install Unity3d (or you 
 3. Decompress ZIP
 4. Go to Unity-DEMO/Asstes/Scenes
 5. Double click file: "DEMO SCENE.unity"
-6. Run it and enjoy your chatroom!
+6. On hierarchy, select SocketIO, and on inspector, change ws://127.0.0.1:4567/socket.io/?EIO=4&transport=websocket to you ip address (ws://your_ip:4567/socket.io/?EIO=4&transport=websocket)
+7. Run it and enjoy your chatroom!
 
 ## C# Cores
 #### Client.cs
@@ -267,7 +268,8 @@ Server start....
 3. 解压ZIP
 4. 进入目录Unity-DEMO/Asstes/Scenes
 5. 双击文件： "DEMO SCENE.unity"
-6. 运行并尽情测试你的聊天室是否可用！
+6. 在阶层中，选择SocketIO，同时，在检查器中，将ws://127.0.0.1:4567/socket.io/?EIO=4&transport=websocket改为你的ip地址(ws://your_ip:4567/socket.io/?EIO=4&transport=websocket)
+7. 运行并尽情测试你的聊天室是否可用！
 
 ## C# 核心
 #### Client.cs
