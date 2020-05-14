@@ -72,7 +72,7 @@ Server start....
 ### Client side
 Note: Client setup fits all operating systems which can install Unity3d (or you build project to different platforms via Unity)
 
-1. Press [Here](https://github.com/JasonXuDeveloper/Realtime-Chat) to go to our Github page (ignore if you are already here)
+1. Press [Here](https://github.com/JasonXuDeveloper/Realtime-Socket-Chat/tree/master) to go to our Github page (ignore if you are already here)
 2. Download ZIP
 3. Decompress ZIP
 4. Go to Unity-DEMO/Asstes/Scenes
@@ -264,7 +264,7 @@ Server start....
 ### 客户端
 注意：客户端可以在任何可以使用Unity3d的操作系统运行（或者通过Unity打包项目到其他平台）
 
-1. 点击[这里](https://github.com/JasonXuDeveloper/Realtime-Chat)进入项目Github地址（如果你已经在这个页面请忽略）
+1. 点击[这里](https://github.com/JasonXuDeveloper/Realtime-Socket-Chat/tree/master)进入项目Github地址（如果你已经在这个页面请忽略）
 2. 下载项目ZIP
 3. 解压ZIP
 4. 进入目录Unity-DEMO/Asstes/Scenes
