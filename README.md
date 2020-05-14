@@ -1,8 +1,7 @@
 # Realtime-Chat
 A realtime chat code based on C# client with Node.js Server, supports multi-chatroom &amp; private individual chats
 <br>
-[中文版请点这里](#实时聊天系统)
-
+[中文请点这里](#实时聊天系统)
 
 ## SETUP
 ### Server side
@@ -334,7 +333,7 @@ Socket.On("recieveMsg",(e)=>
 
 <br>
 
-## Server cores
+## 服务端核心
 可以在Server目录下History.txt查阅完整全部客户聊天记录
 ```js
 var server=require('socket.io');//socket
