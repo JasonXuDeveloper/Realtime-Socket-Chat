@@ -51,7 +51,7 @@ $ npm install socket.io
 
 Clone this project
 ```sh
-$ git clone https://github.com/JasonXuDeveloper/Realtime-Chat.git
+$ git clone https://github.com/JasonXuDeveloper/Realtime-Socket-Chat.git
 ```
 
 Go to Server dictionary
@@ -244,7 +244,7 @@ $ npm install socket.io
 
 克隆该项目
 ```sh
-$ git clone https://github.com/JasonXuDeveloper/Realtime-Chat.git
+$ git clone https://github.com/JasonXuDeveloper/Realtime-Socket-Chat.git
 ```
 
 进入服务端目录
