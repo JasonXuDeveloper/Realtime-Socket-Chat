@@ -1,8 +1,7 @@
 # Realtime-Chat
 A realtime chat code based on C# client with Node.js Server, supports multi-chatroom &amp; private individual chats
 <br>
-[中文版请点这里](#实时聊天系统)
-
+[中文请点这里](#实时聊天系统)
 
 ## SETUP
 ### Server side
@@ -77,7 +76,8 @@ Note: Client setup fits all operating systems which can install Unity3d (or you 
 3. Decompress ZIP
 4. Go to Unity-DEMO/Asstes/Scenes
 5. Double click file: "DEMO SCENE.unity"
-6. Run it and enjoy your chatroom!
+6. On hierarchy, select SocketIO, and on inspector, change ws://127.0.0.1:4567/socket.io/?EIO=4&transport=websocket to you ip address (ws://your_ip:4567/socket.io/?EIO=4&transport=websocket)
+7. Run it and enjoy your chatroom!
 
 ## C# Cores
 #### Client.cs
@@ -123,7 +123,9 @@ public class Main
     }
 }
 ```
+
 <br>
+
 #### Chatroom.cs
 This is the main UI Setup & Server listener code.
 See Unity-DEMO/Scripts/Chatroom.cs for details.
@@ -137,7 +139,9 @@ Socket.On("recieveMsg",(e)=>
     //Codes here for showing what we recieved;
 });
 ```
+
 <br>
+
 ## Server cores
 You can check the history.txt file in Server dictionary, which is the chat history overall
 ```js
@@ -191,11 +195,6 @@ please follow [jason_the_developer](https://www.instagram.com/jason_the_programm
 
 # 实时聊天系统
 基于C#客户端以及Node.js服务端的聊天室，支持多人聊天室以及私人聊天
-
-## 接下来会更新什么？
-* 基于C#的客户端源代码（需要在Unity3d运行）
-* 基于Node.js的服务端源代码（可在任何系统虚拟机运行，请先部署Node.js环境）
-* Unity3d示例项目
 
 ## 部署
 ### 服务端
@@ -269,7 +268,8 @@ Server start....
 3. 解压ZIP
 4. 进入目录Unity-DEMO/Asstes/Scenes
 5. 双击文件： "DEMO SCENE.unity"
-6. 运行并尽情测试你的聊天室是否可用！
+6. 在阶层中，选择SocketIO，同时，在检查器中，将ws://127.0.0.1:4567/socket.io/?EIO=4&transport=websocket改为你的ip地址(ws://your_ip:4567/socket.io/?EIO=4&transport=websocket)
+7. 运行并尽情测试你的聊天室是否可用！
 
 ## C# 核心
 #### Client.cs
@@ -315,7 +315,9 @@ public class Main
     }
 }
 ```
+
 <br>
+
 #### Chatroom.cs
 展示UI以及接收服务器信息的核心代码
 查看Unity-DEMO/Scripts/Chatroom.cs以获得更多详情
@@ -329,8 +331,10 @@ Socket.On("recieveMsg",(e)=>
     //Codes here for showing what we recieved;
 });
 ```
+
 <br>
-## Server cores
+
+## 服务端核心
 可以在Server目录下History.txt查阅完整全部客户聊天记录
 ```js
 var server=require('socket.io');//socket
