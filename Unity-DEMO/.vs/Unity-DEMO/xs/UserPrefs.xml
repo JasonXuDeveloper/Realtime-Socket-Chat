@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{517F3EFA-BC46-E832-33C5-718A297AEDC2}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Client.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Client.cs" Line="39" Column="29" />
+      <File FileName="Assets/Scripts/Chatroom.cs" Line="21" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Unity-DEMO" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Client.cs" selected="True" />
+              </Node>
+              <Node name="SocketIO" expanded="True">
+                <Node name="WebsocketSharp" expanded="True">
+                  <Node name="Net" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9571e8a1-b4d5-49f4-afd1-4fab43d7e870" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
