@@ -65,7 +65,7 @@ io.on('connection', function(socket){
 	    callback(id);
 	    ids.push(id);
 	    //tells people in the chatroom that who joined
-	    io.sockets.emit('recieveMsg', {id: "System",text: id+" has joined thet chat!"});
+	    io.sockets.emit('recieveMsg', {id: "System",text: id+" has joined the chat!"});
 	    console.log(id+" has now joined!");
   });
 	

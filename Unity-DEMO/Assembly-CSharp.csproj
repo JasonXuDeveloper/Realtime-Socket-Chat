@@ -146,19 +146,19 @@
     <Compile Include="Assets\SocketIO\WebsocketSharp\WebSocketStream.cs" />
     <None Include="Assets\SocketIO\JSONObject\readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/jason/Program/插件/Realtime-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/jason/Documents/GitHub/Realtime-Socket-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/jason/Program/插件/Realtime-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/jason/Documents/GitHub/Realtime-Socket-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/jason/Program/插件/Realtime-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/jason/Documents/GitHub/Realtime-Socket-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/jason/Program/插件/Realtime-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/jason/Documents/GitHub/Realtime-Socket-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/jason/Program/插件/Realtime-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/jason/Documents/GitHub/Realtime-Socket-Chat/Unity-DEMO/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/2018.4.21f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -365,7 +365,7 @@
       <HintPath>/Applications/Unity/Hub/2018.4.21f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/jason/Program/插件/Realtime-Chat/Unity-DEMO/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/jason/Documents/GitHub/Realtime-Socket-Chat/Unity-DEMO/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/2018.4.21f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

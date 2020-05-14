@@ -141,6 +141,8 @@ namespace JEngine.Realtime
                     go.GetComponent<Text>().color = new Color(220,0,0);
                 }
                 go.GetComponent<Text>().text = "[" + id + "] " + text;
+                //Scroll to bottom
+                UIContentArea.GetComponentInParent<ScrollRect>().verticalNormalizedPosition = 0;
             });
 
             //Button click listener
