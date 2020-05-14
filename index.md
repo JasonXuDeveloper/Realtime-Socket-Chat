@@ -1,8 +1,7 @@
 # Realtime-Chat
 A realtime chat code based on C# client with Node.js Server, supports multi-chatroom &amp; private individual chats
 <br>
-[中文版请点这里](#实时聊天系统)
-
+[中文请点这里](#实时聊天系统)
 
 ## SETUP
 ### Server side
@@ -123,7 +122,9 @@ public class Main
     }
 }
 ```
+
 <br>
+
 #### Chatroom.cs
 This is the main UI Setup & Server listener code.
 See Unity-DEMO/Scripts/Chatroom.cs for details.
@@ -137,7 +138,9 @@ Socket.On("recieveMsg",(e)=>
     //Codes here for showing what we recieved;
 });
 ```
+
 <br>
+
 ## Server cores
 You can check the history.txt file in Server dictionary, which is the chat history overall
 ```js
@@ -191,11 +194,6 @@ please follow [jason_the_developer](https://www.instagram.com/jason_the_programm
 
 # 实时聊天系统
 基于C#客户端以及Node.js服务端的聊天室，支持多人聊天室以及私人聊天
-
-## 接下来会更新什么？
-* 基于C#的客户端源代码（需要在Unity3d运行）
-* 基于Node.js的服务端源代码（可在任何系统虚拟机运行，请先部署Node.js环境）
-* Unity3d示例项目
 
 ## 部署
 ### 服务端
@@ -315,7 +313,9 @@ public class Main
     }
 }
 ```
+
 <br>
+
 #### Chatroom.cs
 展示UI以及接收服务器信息的核心代码
 查看Unity-DEMO/Scripts/Chatroom.cs以获得更多详情
@@ -329,8 +329,10 @@ Socket.On("recieveMsg",(e)=>
     //Codes here for showing what we recieved;
 });
 ```
+
 <br>
-## Server cores
+
+## 服务端核心
 可以在Server目录下History.txt查阅完整全部客户聊天记录
 ```js
 var server=require('socket.io');//socket
