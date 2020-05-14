@@ -79,6 +79,102 @@ Note: Client setup fits all operating systems which can install Unity3d (or you 
 5. Double click file: "DEMO SCENE.unity"
 6. Run it and enjoy your chatroom!
 
+## C# Cores
+#### Client.cs
+Core class which sends messages and does server-side actions
+```C#
+//This is the base class on c# which is the core code
+[Serializable]
+public class Client
+{
+    //Use this method to set a new ID (Name) for a client
+    public void SetID(string newID)
+    {
+        //xxx;
+        //xxx;
+    }
+    
+    //Login to server so that the client can send messages
+    public void Login()
+    {
+        //xxx;
+        //xxx;
+    }
+    
+    //Use this method to send message
+    public async void SendMessage(string msg)
+    {
+        //xxx
+        //xxx
+    }
+}
+/*
+ * Run server code first
+ * Then, try this code (or try the unity example)
+ */
+public class Main
+{
+    void Main()
+    {
+        var Client = new Client();
+        Client.SetID("Test");
+        Client.SendMessage("Hi There!");
+        //See what will happen on the server
+    }
+}
+```
+<br>
+#### Chatroom.cs
+This is the main UI Setup & Server listener code.
+See Unity-DEMO/Scripts/Chatroom.cs for details.
+
+```c#
+//What we have is the most imortant piece of code here:
+Socket.On("recieveMsg",(e)=>
+{
+    var id = e.data.list[0].str;
+    var text = e.data.list[1].str;
+    //Codes here for showing what we recieved;
+});
+```
+<br>
+## Server cores
+You can check the history.txt file in Server dictionary, which is the chat history overall
+```js
+var server=require('socket.io');//socket
+var fs=require('fs');//file stream
+
+
+//saves chat history
+fs.access('history.txt',(err)=>{
+    if(err){
+        fs.writeFile('history.txt','','utf8',function(error){
+            if(error){
+                console.log(error);
+                return false;
+            }
+            console.log('Successfully created history.txt');
+        });
+    }
+});
+
+var io = new server(4567);//you can change 4567 here to port you want
+
+
+console.log('Server Start....');
+
+var ids = [];//a list which saves current ids to avoid same names
+
+//a function which makes unique id
+function guid() {
+    return xxx;
+}
+
+//when socker connected
+io.on('connection', function(socket){
+    //xxx;
+}
+```
 
 ## What will be coming soom?
 * ~~C# based client source code (running on Unity 3d)~~
@@ -175,6 +271,102 @@ Server start....
 5. 双击文件： "DEMO SCENE.unity"
 6. 运行并尽情测试你的聊天室是否可用！
 
+## C# 核心
+#### Client.cs
+处理服务器回调以及发送信息的核心代码
+```C#
+//This is the base class on c# which is the core code
+[Serializable]
+public class Client
+{
+    //Use this method to set a new ID (Name) for a client
+    public void SetID(string newID)
+    {
+        //xxx;
+        //xxx;
+    }
+    
+    //Login to server so that the client can send messages
+    public void Login()
+    {
+        //xxx;
+        //xxx;
+    }
+    
+    //Use this method to send message
+    public async void SendMessage(string msg)
+    {
+        //xxx
+        //xxx
+    }
+}
+/*
+ * Run server code first
+ * Then, try this code (or try the unity example)
+ */
+public class Main
+{
+    void Main()
+    {
+        var Client = new Client();
+        Client.SetID("Test");
+        Client.SendMessage("Hi There!");
+        //See what will happen on the server
+    }
+}
+```
+<br>
+#### Chatroom.cs
+展示UI以及接收服务器信息的核心代码
+查看Unity-DEMO/Scripts/Chatroom.cs以获得更多详情
+
+```c#
+//What we have is the most imortant piece of code here:
+Socket.On("recieveMsg",(e)=>
+{
+    var id = e.data.list[0].str;
+    var text = e.data.list[1].str;
+    //Codes here for showing what we recieved;
+});
+```
+<br>
+## Server cores
+可以在Server目录下History.txt查阅完整全部客户聊天记录
+```js
+var server=require('socket.io');//socket
+var fs=require('fs');//file stream
+
+
+//saves chat history
+fs.access('history.txt',(err)=>{
+    if(err){
+        fs.writeFile('history.txt','','utf8',function(error){
+            if(error){
+                console.log(error);
+                return false;
+            }
+            console.log('Successfully created history.txt');
+        });
+    }
+});
+
+var io = new server(4567);//you can change 4567 here to port you want
+
+
+console.log('Server Start....');
+
+var ids = [];//a list which saves current ids to avoid same names
+
+//a function which makes unique id
+function guid() {
+    return xxx;
+}
+
+//when socker connected
+io.on('connection', function(socket){
+    //xxx;
+}
+```
 
 ## 接下来会有什么？
 * ~~基于C#的Unity3d客户端~~
@@ -185,6 +377,7 @@ Server start....
 ## 关于作者
 有问题请加作者QQ：2313551611，
 并标明是从Github来反馈问题的！
+
 
 
 

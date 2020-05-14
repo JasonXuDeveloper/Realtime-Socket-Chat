@@ -5,7 +5,6 @@ var fs=require('fs');//file stream
 //saves chat history
 fs.access('history.txt',(err)=>{
     if(err){
-    	//3. fs.writeFile  写入文件（会覆盖之前的内容）（文件不存在就创建）  utf8参数可以省略  
 		fs.writeFile('history.txt','','utf8',function(error){
 			if(error){
         		console.log(error);
